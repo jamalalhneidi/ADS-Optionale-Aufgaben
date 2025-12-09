@@ -1,0 +1,40 @@
+# ------------------------------------
+# 1. Java-Kompilierungsartefakte
+# ------------------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+hs_err_pid*
+
+# Das Build-Verzeichnis ignorieren (häufig 'target' bei Maven, 'build' bei Gradle)
+target/
+build/
+
+# ------------------------------------
+# 2. IDE- und Workspace-Konfigurationen
+# ------------------------------------
+# Visual Studio Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# ------------------------------------
+# 3. Temporäre und Log-Dateien
+# ------------------------------------
+# Log-Dateien
+*.log
+log/
+
+# Temporäre Editor-Dateien (z.B. von Vim)
+*~
+*.swp
+
+# Sensible Daten (NIEMALS hochladen!)
+.env
+secrets.txt
