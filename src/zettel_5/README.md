@@ -70,3 +70,4 @@ Die beiden Hash-Funktionen $h_1(x)$ und $h_2(x)$ werden aus dieser universellen 
 * **Antwort:** Ja, dies ist garantiert **genau dann**, wenn der größte gemeinsame Teiler (ggT) von $h_2(x)$ und $m$ gleich 1 ist.
 $$\gcd(h_{2}(x), m) = 1$$
 
+---
