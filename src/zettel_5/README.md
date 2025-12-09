@@ -62,7 +62,7 @@ Die beiden Hash-Funktionen $h_1(x)$ und $h_2(x)$ werden aus dieser universellen 
 ### 4. Tabellengröße ($m$)
 
 * $m$ (die Größe der Hashtabelle) wird als **Primzahl** gewählt. 
-* Die Lastfaktor $\alpha = \frac{n}{m}$ (wobei $n$ die Anzahl der Elemente ist) sollte im Bereich $0.5 \leq \alpha \leq  1$ liegen. 
+* Die Auslasungsfaktor $\alpha = \frac{n}{m}$ (wobei $n$ die Anzahl der Elemente ist) sollte im Bereich $0.5 \leq \alpha \leq  1$ liegen. 
 
 ### 5. Schleifen-Garantie
 
