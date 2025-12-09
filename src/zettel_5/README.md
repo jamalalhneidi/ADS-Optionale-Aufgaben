@@ -67,5 +67,6 @@ Die beiden Hash-Funktionen $h_1(x)$ und $h_2(x)$ werden aus dieser universellen 
 ### 5. Schleifen-Garantie
 
 * **Frage:** Ist garantiert, dass die Sondierungsfunktion $h(x, i)$ alle Buckets (d.h. die Indizes $0$ bis $m-1$) durchläuft? 
-* **Antwort:** Ja, dies ist garantiert **genau dann**, wenn der größte gemeinsame Teiler (ggT) von $h_2(x)$ und $m$ gleich 1 ist. 
-    $$\gcd(h_{2}(x), m) = 1$$
+* **Antwort:** Ja, dies ist garantiert **genau dann**, wenn der größte gemeinsame Teiler (ggT) von $h_2(x)$ und $m$ gleich 1 ist.
+$$\gcd(h_{2}(x), m) = 1$$
+
