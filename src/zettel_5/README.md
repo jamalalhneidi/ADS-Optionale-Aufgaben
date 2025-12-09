@@ -43,7 +43,7 @@ $$h(x,i):=(h_{1}(x)+i \cdot (1+h_{2}(x))) \bmod m \quad i \in [0, m-1]$$
 
 Es wird eine universelle Familie von Hash-Funktionen $\mathcal{H}$ verwendet: 
 
-$$\mathcal{H}:=\{h_{a,b}:0 \le a,b < p\}$$
+$$ \mathcal{H} := \{ h_{a,b} : 0 \le a,b < p \} $$
 
 Die Funktion $h_{a,b}(x)$ ist definiert als: 
 
