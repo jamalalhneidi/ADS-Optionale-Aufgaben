@@ -1,7 +1,13 @@
 # 🏟️ Aufgabe 5: Spieler desselben Vereins finden
 
+```
+javac -d bin -sourcepath src src/zettel_5/Main.java && java -cp bin zettel_5.Main
+```
+
 ## 🎯 Ziel
 Das Programm soll, basierend auf dem Namen eines Spielers, alle anderen Spieler ausgeben, die demselben Verein angehören.
+
+
 
 ## 💾 Datenstruktur zur Speicherung
 
@@ -31,13 +37,13 @@ Der Ablauf zur Lösung der Aufgabe gliedert sich in folgende Schritte:
 Beide Hashtabellen verwenden die folgenden Spezifikationen:
 
 ### 1. Kollisionsbehandlung
-* **Methode:** **Geschlossenes Hashing** (**Open Addressing**) 
-* **Sondierung:** **Double Hashing** 
+* **Methode:** Geschlossenes Hashing (Open Addressing) 
+* **Sondierung:** Double Hashing 
 
 ### 2. Sondierungsfunktion
 Die Sondierungsfunktion $h(x, i)$ ist definiert als: 
 
-$$h(x,i):=(h_{1}(x)+i \cdot (1+h_{2}(x))) \bmod m \quad i \in [0, m-1]$$
+$$h(x,i):=(h_{1}(x)+i \cdot h_{2}(x)) \bmod m \quad i \in [0, m-1]$$
 
 ### 3. Hash-Funktionen ($h_1$ und $h_2$)
 
@@ -54,15 +60,15 @@ $$h_{a,b}(x) := ((ax+b) \bmod p) \bmod m$$
 * $p$ ist eine Primzahl. 
 * $a$ und $b$ werden zufällig gewählt. 
 
-Die beiden Hash-Funktionen $h_1(x)$ und $h_2(x)$ werden aus dieser universellen Familie abgeleitet: 
+Nun definieren wir zwei Hash-Funktionen $h_1(x)$ und $h_2(x)$: 
 
-* $h_{1}(x) = h_{a_{1}, b_{1}}(x)$ 
-* $h_{2}(x) = h_{a_{2}, b_{2}}(x)$ 
+* $h_{1}(x) = h_{a, b}(x)$ 
+* $h_{2}(x) = 1 + x \bmod m−2$ 
 
 ### 4. Tabellengröße ($m$)
 
 * $m$ (die Größe der Hashtabelle) wird als **Primzahl** gewählt. 
-* Die Auslasungsfaktor $\alpha = \frac{n}{m}$ (wobei $n$ die Anzahl der Elemente ist) sollte im Bereich $0.5 \leq \alpha \leq  1$ liegen. 
+* Die Auslasungsfaktor $\alpha = \frac{n}{m}$ sollte im Bereich $0.5 \leq \alpha \leq  0.75$ liegen. 
 
 ### 5. Schleifen-Garantie
 
