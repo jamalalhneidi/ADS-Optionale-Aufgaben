@@ -15,12 +15,12 @@ Um die Spielerdaten effizient zu speichern und abzurufen, werden zwei separate H
 
 1.  **Hashtable 1: Name -> Verein** 
     * **Schlüssel**: Spielername (String)
-    * **Wert**: Name des Vereins (String)
+    * **Wert**: Eine Liste von Vereinen (Strings)
     * **Zweck:** Dient dazu, schnell den Verein eines eingegebenen Spielers zu ermitteln.
 
 2.  **Hashtable 2: Verein -> Liste von Namen** 
     * **Schlüssel**: Name des Vereins (String)
-    * **Wert**: Eine Liste von Spielernamen (z.B. eine `LinkedList`), die diesem Verein angehören. 
+    * **Wert**: Eine Liste von Spielernamen (Strings)
     * **Zweck:** Dient dazu, alle Spieler abzurufen, die zu einem bestimmten Verein gehören.
 
 ## ⚙️ Lösungsablauf
