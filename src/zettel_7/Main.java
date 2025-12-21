@@ -54,7 +54,7 @@ public class Main {
         }
         System.out.println();
         System.out.println(
-                "In the case of ExtendedKeys, the number of comparisons is higher becuase we run more compaisons to break ties when keys are equal.");
+                "In the case of ExtendedKeys, the number of comparisons is higher because we run more comparisons to break ties when keys are equal.");
         System.out.println("Heapsort is also not stable.");
     }
 
